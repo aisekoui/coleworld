@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jermaine Lamarr Cole</title>
+    <!-- Include jQuery for fade effects -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Import the custom font */
+        @font-face {
+    src: url(tradegothic.ttf);
+    font-family: tgc;
+}
+
+	@font-face {
+    src: url(timesregular.ttf);
+    font-family: tir;
+}
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Prevents overall body scrolling */
+        }
+
+        /* Container to hold both sides with equal width */
+        .container {
+            display: flex; /* Use flexbox for equal-width sides */
+            height: 100%; /* Ensure full height for the content area */
+        }
+
+        /* Left content for fading images with dark overlay */
+        .left-content {
+            width: 50%; /* Equal width for both sides */
+            position: relative; /* Allows for absolute positioning */
+            overflow: hidden; /* Ensures images do not overflow the container */
+        }
+
+        /* Scrollable right side */
+.right-content {
+    width: 50%; /* Equal width for both sides */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional padding */
+	
+	
+}
+
+
+        /* CSS for fading images with dark overlay */
+        .images {
+            position: relative; /* Allows absolute positioning of text */
+            height: 100%; /* Occupy full height */
+        }
+
+        .images img {
+            display: none; /* Initially hide all images */
+            position: absolute; /* Allows images to overlap for fade effect */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensure the images cover the entire container */
+            height: 100%; /* Ensures the images cover the entire container */
+            object-fit: cover; /* Ensures images scale properly without distortion */
+        }
+
+        /* Dark overlay to darken the images without affecting the text */
+        .dark-overlay {
+            position: absolute; /* Allows for full overlay */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width of the container */
+            height: 100%; /* Full height of the container */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black, adjust opacity as needed */
+            z-index: 1; /* Lower z-index to ensure it stays behind the text */
+        }
+
+.text-overlay {
+    position: absolute; /* Ensures consistent positioning relative to the parent */
+    top: 20%; /* Adjusts vertical position of the entire text container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centers horizontally */
+    z-index: 2; /* Ensures it stays above other elements */
+    width: 90%; /* Widen the space for the description */
+    text-align: center; /* Centers text alignment */
+}
+
+.artist-name {
+    font-family: tgc; /* Custom font */
+    font-size: 120px; /* Large font for the artist's name */
+    color: #FFFFFF; /* White text */
+    position: absolute; /* Absolute positioning to keep it fixed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centers horizontally */
+}
+
+.description {
+    font-family: tir; /* Custom font */
+    font-size: 24px; /* Description font size */
+    color: #FFFFFF; /* White text */
+    position: absolute; /* Absolute positioning to ensure consistency */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 200px); /* Move 50px down */
+    width: 90%; /* Allow a wider space for the description */
+    text-align: center; /* Centers the text alignment */
+}
+
+.image {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    display: block; /* Ensure it's displayed as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="images">
+                <img src="cole1.jpg" alt="Jermaine Lamarr Cole" />
+                <img src="cole2.jpg" alt="Jermaine Lamarr Cole" />
+                <img src="cole3.jpg" alt="Jermaine Lamarr Cole" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="dark-overlay"></div> <!-- The dark overlay to darken the background -->
+            <div class="text-overlay">
+                <div class="artist-name">J. COLE</div>
+                <div class="description">A North Carolina native, Cole grew up with a mother who loved rock and folk while his father was a fan of hardcore hip-hop artists like 2Pac and Ice Cube.</div>
+            </div>
+        </div>
+<div class="right-content">
+    <!-- Centered introduction paragraph with added spacing -->
+	<div style="text-align: center;"> <!-- Center the image -->
+        <img src="dreamville-logo.png" alt="J. Cole Album"> <!-- Adjust width as needed -->
+    </div>
+	
+    <p style="font-family: 'mont'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px; margin-bottom: 40px;">
+        J. Cole, a highly acclaimed hip-hop artist, has established himself as one of the most influential figures in contemporary rap music. Since his debut, J. Cole has produced a series of successful albums that showcase his unique style and thought-provoking lyrics. His music often explores themes of social justice, personal growth, and the challenges of modern life, creating a powerful connection with listeners.
+    </p>
+
+    <!-- Image of Cole's album with added spacing -->
+    <div style="text-align: center; margin-bottom: 20px;"> <!-- Add margin below the image -->
+<img class="image" src="album1.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        COLE WORLD: THE SIDELINE STORY
+    </p>
+	   
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        
+"Cole World: The Sideline Story" is J. Cole's debut studio album, released in 2011 under Jay-Z's Roc Nation label. The album features a blend of introspective lyrics and hard-hitting beats, showcasing J. Cole's storytelling prowess. It includes hit singles like "Work Out" and "Can't Get Enough," along with guest appearances from artists like Trey Songz and Missy Elliott. The album reflects J. Cole's journey from a budding rapper to a mainstream artist, addressing themes of ambition, perseverance, and personal growth. With its thoughtful narratives and engaging production, "Cole World: The Sideline Story" set the stage for J. Cole's successful career in hip-hop.
+    </p>
+
+
+  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album2.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        BORN SINNER
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        
+"Born Sinner" is J. Cole's second studio album, released in 2013, showcasing the artist's growth and maturity as a storyteller in the hip-hop genre. Following the success of his debut, J. Cole explores deeper themes of sin and redemption, navigating the complexities of fame and personal struggles.
+    </p>
+	
+	  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album3.jpg" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        THE BLOW UP
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        
+"The Blow Up" is an unreleased album by J. Cole that has garnered significant attention among his fan base due to its elusive nature. Mentioned in interviews and referenced in his music, "The Blow Up" was expected to be J. Cole's follow-up project to his critically acclaimed mixtape, "The Warm Up." The album title reflects the anticipation and growing momentum in J. Cole's career at the time, signaling his rise in the hip-hop world.
+    </p>
+	
+		  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album4.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        2014 FOREST HILLS DRIVE
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        "2014 Forest Hills Drive," released in 2014, is J. Cole's third studio album and one of his most acclaimed works. Named after his childhood home in Fayetteville, North Carolina, the album is a deeply personal exploration of J. Cole's life and experiences. It captures his reflections on fame, success, and the journey to rediscovering himself in the midst of a rapidly changing world.
+    </p>
+	
+			  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album5.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        4 YOUR EYEZ ONLY
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+	   
+"4 Your Eyez Only" is J. Cole's fourth studio album, released in 2016. This concept album is uniquely structured as a narrative, exploring themes of life, loss, love, and legacy through the lens of a fictional story. The album's central narrative revolves around the life and death of a young man named James McMillan Jr., whose story is told from J. Cole's perspective.
+    </p>
+	
+	<div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album6.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        KOD
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+	   
+
+"KOD" (an abbreviation for Kids on Drugs, King Overdosed, and Kill Our Demons) is J. Cole's fifth studio album, released in 2018. The album addresses a range of themes centered around addiction, social pressures, and self-destructive behavior. Through this work, J. Cole explores the struggles with substance abuse, materialism, and mental health that affect individuals and communities, especially within the context of contemporary society.
+
+    </p>
+	
+	    </p>
+	
+	<div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album7.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        THE OFF-SEASON
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+	   
+
+"The Off-Season" is J. Cole's sixth studio album, released in 2021. The album signifies a return to classic hip-hop roots while also showcasing J. Cole's growth as an artist and storyteller. It's part of a broader project titled "The Fall Off Era," where J. Cole reflects on his journey in the music industry, the challenges he's faced, and the evolution of his craft.
+
+    </p>
+	
+		<div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album8.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+        MIGHT DELETE LATER
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+	   
+
+Might Delete Later is J. Cole’s fourth mixtape and his first release of 2024. It dropped as a surprise release on April 5, 2024, in the lead-up to Cole’s Dreamville Fest which took place on April 6 and 7.
+    </p>
+	
+	    </p>
+	
+</div>
+
+
+    <!-- JavaScript to handle the fade-in/fade-out effect and text change -->
+    <script>
+        $(function() {
+            var images = $(".images img").hide(); /* Initially hide all images */
+            var descriptions = [
+                "A North Carolina native, Cole grew up with a mother who loved rock and folk while his father was a fan of hardcore hip-hop artists like 2Pac and Ice Cube.",
+                "Since 2013, Cole has conducted an annual tour called “Dollar And A Dream” where fans willing to pay one dollar are treated to tracks from his early work.",
+                "J. Cole was the first artist signed to Jay-Z’s Roc Nation label who released his official debut, Cole World: The Sideline Story, which debuted on top of the Billboard 200. Featuring the single “Power Trip”. Born Sinner followed in 2013 with guest appearances from Miguel, TLC, and Kendrick Lamar.",
+                // Add more descriptions matching the order of images
+            ];
+            var current = 0;
+            images.eq(current).fadeIn(); /* Show the first image */
+            setInterval(function() {
+                var next = (current + 1) % images.length;
+                images.eq(current). fadeOut(); /* Fade out the current image */
+                images.eq(next).fadeIn(); /* Fade in the next image */
+                $(".text-overlay .description").text(descriptions[next]); /* Update description text */
+                current = next; /* Update the current index */
+            }, 3000); /* Change the image every 3 seconds, adjust as needed */
+        });
+    </script>
+</body>
+</html>
+
+
+
